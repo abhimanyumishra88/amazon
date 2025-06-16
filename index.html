@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: bisque;
+        }
+        nav{
+            height: 63px;
+            background-color: rgb(1, 16, 37);
+            color: rgb(255, 255, 255);
+        }
+        .logo{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 3.5rem;
+            margin: 0 30PX;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 30px;
+           
+        }
+        nav ul li{
+            margin: 0 23px;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        main{
+            height: 1808px;
+        }
+        .containers{
+            height: 521px;
+            flex-direction: row;
+            margin: 10PX 0;
+        }
+        .box1{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box2{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(ll.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box3{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(kk.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box4{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(jj.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box5{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(ss.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box6{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(gg.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+        }
+        .box7{
+            height: 247px;
+            width: 134px;
+            background-color: white;
+            background-image: url(ff.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box8{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(dd.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin: 10PX 0;
+            }
+        .box9{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(q1.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+             margin: 10PX 0;
+            }
+        .box10{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(q2.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+             margin: 10PX 0;
+            }
+        .box1q{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(q3.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+             margin: 10PX 0;
+            }
+        .box2q{
+            height: 247px;
+            width: 250px;
+            background-color: white;
+            background-image: url(q4.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+             margin: 10PX 0;
+            }
+        .box3q{
+            height: 247px;
+            width: 291px;
+            background-color: white;
+            background-image: url(q5.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+             margin: 10PX 0;
+            }
+        .box11{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(bbb.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        }
+        .box12{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(ccc.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        }
+        .box13{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(mmm.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        }
+        .box14{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(vvv.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        }
+        .box15{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(xxx.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        
+        }
+        .boy{
+            background-color: white;
+        }
+        .girl{
+            height:320px ;
+            background-color: white;
+        }
+        .box16{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(hhh.pnh.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        
+        }
+        .box17{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(ggg.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        
+        }
+        .box18{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(sss.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        
+        }
+        .box19{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aaa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        
+        }
+        .box20{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(kkk.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        } 
+
+         .box21{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(xcm_banners_01_tiles_v1_440x460_in-en.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box22{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(w9.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box23{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(w8.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box24{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(w7.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box25{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(w6.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box26{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(w5.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box27{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(w4.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box28{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(w3.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box29{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(w2.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box30{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(w1.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+     }
+     .item{
+        background-color: white;
+     }
+     footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  height:580px;
+}
+.as{
+    height: 200px;
+    width: 134px;
+    display: inline-block;
+     line-height: 2rem;
+     margin: 30px 720px;
+     position:absolute;
+
+}
+.zx{
+    height: 300px;
+    width: 168px;
+    display: inline-block;
+     line-height: 2rem;
+     margin:30px 1056px;
+     position:absolute;
+}
+.cv{
+    height: 300px;
+    width: 168px;
+    display: inline-block;
+     line-height: 2rem;
+     margin: 30px 110px;
+     position:absolute;
+}
+.qw{
+    height: 300px;
+    width: 132px;
+    display: inline-block;
+     line-height: 2rem;
+     margin: 30px 421px;
+     position:absolute;
+}
+a{
+    text-align: center;
+}
+hr{
+    margin: 464px 0;
+     position:absolute;
+    width: 1385px;
+}
+
+    .footer {
+      background-color: #232f3e;
+      color: #dddddd;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+    }
+    .footer-links{
+        position: absolute;
+        margin: 501px 520px;
+        text-align: center;
+    }
+    .copyright{
+        position: absolute;
+        margin: 480px 551px;
+        text-align: center;
+    }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                amazon
+              </div>   
+            <ul>
+                <li><a href="">Home</li></a>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact us</a></li>
+                <input type="text" placeholder="Search for item">
+                <button>Search</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="containers">
+            <div class="box1">a</div>
+            <div class="box2">b</div>
+            <div class="box3">c</div>
+            <div class="box4">d</div>
+            <div class="box5">e</div>
+            <div class="box6">f</div>
+            <div class="box7">g</div>
+            <div class="box8">h</div>
+            <div class="box9">h</div>
+            <div class="box10">h</div>
+            <div class="box1q">h</div>
+            <div class="box2q">h</div>
+            <div class="box3q">h</div>
+            <br>
+            <br>
+          
+              <div class="boy">
+            <h1>Min. 50% off | Unique home finds | Amazon Brands & more</h1>
+            <div class="box11"></div>
+            <div class="box12"></div>
+            <div class="box13"></div>
+            <div class="box14"></div>
+            <div class="box15"></div>
+        </div>
+        <br><br>  
+         <div class="item">
+            <div class="box21">a</div>
+            <div class="box22">b</div>
+            <div class="box23">c</div>
+            <div class="box24">d</div>
+            <div class="box25">e</div>
+            <div class="box26">f</div>
+            <div class="box27">g</div>
+            <div class="box28">h</div>
+            <div class="box29">h</div>
+            <div class="box30">h</div>
+            <br>
+            <br>
+         </div>
+         <br><br>
+              <div class="girl">
+            <h1>Starting ₹70,348 | Ride into your next adventure</h1>
+            <div class="box16"></div>
+            <div class="box17"></div>
+            <div class="box18"></div>
+            <div class="box19"></div>
+            <div class="box20"></div>
+        </div>
+    </main>
+    <!-- Footer -->
+<footer>
+  <div class="qw">
+    <h2>Get to Know Us</h2>
+    <p>About Amazon
+Careers
+Press Releases
+Amazon Science</p>
+  </div>
+  <div class="as">
+    <h2>Connect with Us</h2>
+    <p>Facebook
+Twitter
+Instagram</p>
+  </div>
+  <div class="zx">
+    <h2>Make Money with Us</h2>
+    <p>Sell on Amazon
+Sell under Amazon Accelerator
+Protect and Build Your Brand
+Amazon Global Selling
+Supply to Amazon
+Become an Affiliate
+Fulfilment by Amazon
+Advertise Your Products
+Amazon Pay on Merchants
+</p>
+  </div>
+  <div class="cv">
+    <h2>Let Us Help You</h2>
+    <p>Your Account
+Returns Centre
+Recalls and Product Safety Alerts
+100% Purchase Protection
+Amazon App Download
+Help</p>
+  </div> 
+  <hr>
+   <div class="footer-links">
+      <a href="#">Conditions of Use & Sale</a>
+      <a href="#">Privacy Notice</a>
+      <a href="#">Interest-Based Ads</a>
+    </div>
+    <div class="copyright">
+      © 1996–2025, Amazon.com, Inc. or its affiliates
+    </div>
+</footer>
+
+</body>
+</html>
